@@ -29,7 +29,6 @@ There are two things you can do about this warning:
     ;; For important compatibility libraries like cl-lib
     (add-to-list 'package-archives (cons "gnu" (concat proto "://elpa.gnu.org/packages/")))))
 (package-initialize)
-(setq inhibit-startup-message t) 
 ;(cd "D:\\src")
 
 (with-eval-after-load 'rust-mode
