@@ -10,12 +10,6 @@
  '(package-selected-packages
    (quote
     (cargo elixir-mode racket-mode rust-mode dracula-theme))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:family "Courier New" :foundry "outline" :slant normal :weight normal :height 152 :width normal)))))
 
 (require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
@@ -70,3 +64,4 @@ There are two things you can do about this warning:
 (menu-bar-mode -1)
 (tool-bar-mode -1) 
 
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
