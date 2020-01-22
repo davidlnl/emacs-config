@@ -36,7 +36,7 @@ There are two things you can do about this warning:
     (add-to-list 'package-archives (cons "gnu" (concat proto "://elpa.gnu.org/packages/")))))
 (package-initialize)
 (setq inhibit-startup-message t) 
-(cd "D:\\src")
+;(cd "D:\\src")
 
 (with-eval-after-load 'rust-mode
   (define-key rust-mode-map (kbd "C-r") 'my-cargo-run))
@@ -60,4 +60,13 @@ There are two things you can do about this warning:
                          ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 (package-initialize) ;; You might already have this line
 
+;;disable splash screen and startup message
+(setq inhibit-startup-message t) 
+(setq initial-scratch-message nil)
+
+
 (setq tab-always-indent 'complete)
+;;disable toolbar menu
+(menu-bar-mode -1)
+(tool-bar-mode -1) 
+
