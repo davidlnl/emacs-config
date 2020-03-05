@@ -64,3 +64,6 @@ There are two things you can do about this warning:
 (tool-bar-mode -1) 
 
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
+
+;;disable temporary files
+(setq make-backup-files nil)
